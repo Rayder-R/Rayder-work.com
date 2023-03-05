@@ -29,6 +29,9 @@ def work2():
 def work3():
     return render_template("work3.html")
 
+@myweb.route("/text")  # 函式的裝飾.供附加功能.
+def text():
+    return render_template("text.html")
 
 if __name__ == "__main__":  # 主程式執行
     myweb.run()                # 啟動伺服器
